@@ -20,12 +20,12 @@ except exceptions.ElementDoesNotExist:
     browser.find_by_text("New Self-Assessment", wait_time=5).click()
 
 browser.find_by_text("Yes", wait_time=5).click()
-time.sleep(1)
+time.sleep(0.5)
 
 i=1
 while i <= 6:
     browser.find_by_text("No", wait_time=5)[i].click()
     i+=1
-    time.sleep(1)
+    time.sleep(0.5)
 
 browser.find_by_text("Submit", wait_time=5).click()
